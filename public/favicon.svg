@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <filter id="glow-green" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#22c55e" flood-opacity="0.7"/>
+    </filter>
+    <linearGradient id="edge-hl" x1="146" y1="107" x2="366" y2="107" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#5a7a9f" stop-opacity="0"/>
+      <stop offset="15%"  stop-color="#5a7a9f" stop-opacity="0.9"/>
+      <stop offset="85%"  stop-color="#5a7a9f" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#5a7a9f" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#0f172a"/>
+  <rect x="146" y="106" width="220" height="300" rx="18"
+        fill="#182237" stroke="#253349" stroke-width="2"
+        transform="rotate(-14, 256, 440)"/>
+  <rect x="146" y="106" width="220" height="300" rx="18"
+        fill="#1b2840" stroke="#2a3d56" stroke-width="2"
+        transform="rotate(-7, 256, 440)"/>
+  <rect x="146" y="106" width="220" height="300" rx="18"
+        fill="#1e293b" stroke="#334155" stroke-width="2.5"/>
+  <line x1="164" y1="107" x2="348" y2="107"
+        stroke="url(#edge-hl)" stroke-width="1.5"/>
+  <polyline points="183,252 228,310 335,182"
+            fill="none"
+            stroke="#22c55e"
+            stroke-width="30"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            filter="url(#glow-green)"/>
+</svg>
